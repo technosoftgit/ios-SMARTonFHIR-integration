@@ -40,12 +40,8 @@
 		BF9F7913221E6A8700793C52 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9F7912221E6A8700793C52 /* Connectivity.swift */; };
 		BFC0324622674A8F0055B30C /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0324522674A8F0055B30C /* Endpoints.swift */; };
 		BFC0324A22674FBB0055B30C /* ProviderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0324922674FBB0055B30C /* ProviderListViewController.swift */; };
-		BFCB857C229D37FF00193C74 /* StepsHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB8578229D37FE00193C74 /* StepsHistoryCell.swift */; };
-		BFCB857D229D37FF00193C74 /* ProviderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB8579229D37FF00193C74 /* ProviderListCell.swift */; };
-		BFCB857F229D37FF00193C74 /* SourceSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB857B229D37FF00193C74 /* SourceSelectionCell.swift */; };
 		BFCEAFC322087D4A0052F972 /* MonthDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCEAFC222087D4A0052F972 /* MonthDataModel.swift */; };
 		BFD51CCB21E4B7CE008D0480 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD51CCA21E4B7CE008D0480 /* Enums.swift */; };
-		BFDA8EC7220030CA001C0C5A /* WebServicesUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA8EC6220030CA001C0C5A /* WebServicesUtil.swift */; };
 		BFDA8ECB2200310F001C0C5A /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA8ECA2200310F001C0C5A /* AppConstant.swift */; };
 /* End PBXBuildFile section */
 
@@ -162,12 +158,8 @@
 		BFC0324522674A8F0055B30C /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		BFC0324922674FBB0055B30C /* ProviderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderListViewController.swift; sourceTree = "<group>"; };
 		BFCA935E2225618900949D30 /* MKProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MKProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFCB8578229D37FE00193C74 /* StepsHistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsHistoryCell.swift; sourceTree = "<group>"; };
-		BFCB8579229D37FF00193C74 /* ProviderListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderListCell.swift; sourceTree = "<group>"; };
-		BFCB857B229D37FF00193C74 /* SourceSelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceSelectionCell.swift; sourceTree = "<group>"; };
 		BFCEAFC222087D4A0052F972 /* MonthDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthDataModel.swift; sourceTree = "<group>"; };
 		BFD51CCA21E4B7CE008D0480 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		BFDA8EC6220030CA001C0C5A /* WebServicesUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServicesUtil.swift; sourceTree = "<group>"; };
 		BFDA8ECA2200310F001C0C5A /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		BFEA1A552270424E00733177 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA15E578BAFF638EF793C2B7 /* Pods_SmartOnFHIR_POC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartOnFHIR_POC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -320,10 +312,8 @@
 			isa = PBXGroup;
 			children = (
 				BF10B7C12268A09900B0296D /* FHIR */,
-				BF64B40021FB12020003AEFE /* Cell */,
 				B6832F3B208725050002539D /* Delegate */,
 				3EC94C42205A7AD200627F2B /* Common */,
-				BFDA8EC522002DF4001C0C5A /* Web Authorization */,
 				B6832F3A208724F90002539D /* Controller */,
 			);
 			path = Classes;
@@ -372,24 +362,6 @@
 				BF292F8A226A119F00EF384A /* SwiftSMART-OSXTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BF64B40021FB12020003AEFE /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				BFCB8579229D37FF00193C74 /* ProviderListCell.swift */,
-				BFCB857B229D37FF00193C74 /* SourceSelectionCell.swift */,
-				BFCB8578229D37FE00193C74 /* StepsHistoryCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		BFDA8EC522002DF4001C0C5A /* Web Authorization */ = {
-			isa = PBXGroup;
-			children = (
-				BFDA8EC6220030CA001C0C5A /* WebServicesUtil.swift */,
-			);
-			path = "Web Authorization";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -684,20 +656,16 @@
 				B6CF7CAC20BED4F70028765A /* DateExtension.swift in Sources */,
 				4171FE2621916FFC00A0BAA7 /* AppTheme.swift in Sources */,
 				B6CF7CAE20BED53C0028765A /* ColorExtension.swift in Sources */,
-				BFCB857C229D37FF00193C74 /* StepsHistoryCell.swift in Sources */,
 				BFC0324A22674FBB0055B30C /* ProviderListViewController.swift in Sources */,
 				4190C58A21956A4F003104DA /* UIApplicationExtension.swift in Sources */,
 				BF6EAF5522685162009CCEA7 /* EndpointProvider.swift in Sources */,
 				BFD51CCB21E4B7CE008D0480 /* Enums.swift in Sources */,
 				BFC0324622674A8F0055B30C /* Endpoints.swift in Sources */,
 				3EC94C0D20591E1800627F2B /* AppDelegate.swift in Sources */,
-				BFCB857D229D37FF00193C74 /* ProviderListCell.swift in Sources */,
 				BFDA8ECB2200310F001C0C5A /* AppConstant.swift in Sources */,
-				BFDA8EC7220030CA001C0C5A /* WebServicesUtil.swift in Sources */,
 				BFCEAFC322087D4A0052F972 /* MonthDataModel.swift in Sources */,
 				BF9F7913221E6A8700793C52 /* Connectivity.swift in Sources */,
 				BF0D5F3B21E5D4E700071335 /* CommonMethods.swift in Sources */,
-				BFCB857F229D37FF00193C74 /* SourceSelectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
