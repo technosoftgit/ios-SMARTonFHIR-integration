@@ -11,12 +11,6 @@ import UIKit
 var kOthervalue = "Other"
 var kAllvalue = "All"
 
-// MARK: - Alert Messages..........
-let kMaxLimitReachedMsg = "You have reached maximum limit \(maxPatientsCapturedImages)  of photos."
-
-// Add ?? for replace encounter name...
-let kMesssageOnBackAlert = "You will lose your ?? information, if any. Do you want to continue?"
-
 let kAuthorizationTokenKey = "Authorization"
 let kAppVersionKey = "app_version"
 let kDeviceTypeKey = "device_type"
