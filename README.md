@@ -14,6 +14,8 @@ An **SMART on FHIR IOS App** compatible with DSTU2 and Swift 4.2.
 The `master` branch also contain SMART framework 2.8.2 with Swift 4.2 and DSTU-2 support.
 Swift-SMART 2.8.2 (https://github.com/smart-on-fhir/Swift-SMART/releases/tag/2.8.2)) based on Swift 3.  
 
+	Swift-SMART 2.8.2 for Swift 4.2 available on 
+	https://github.com/technosoftgit/Smart_2_8_2_Swift4.git
 
 ## What's Happening?
 
@@ -38,3 +40,21 @@ Add FHIR server application callback callback url in Info.plist without ://callb
 ### ProviderListViewController
 
 rename "smartapp://callback" on line 160 and 170 with our FHIR server callback if required
+
+### Credits
+  The code based on below liraries
+
+  - smart-on-fhir / Swift-SMART 
+    * Swift-SMART
+    * [https://github.com/smart-on-fhir/Swift-SMART](https://github.com/smart-on-fhir/Swift-SMART)
+
+  - smart-on-fhir/Swift-FHIR
+  	* Swift-FHIR
+  	* [https://github.com/smart-on-fhir/Swift-FHIR](https://github.com/smart-on-fhir/Swift-FHIR)
+  	
+  - smart-on-fhir/SoF-Demo
+  	* SoF-Demo
+  	* [https://github.com/smart-on-fhir/SoF-Demo](https://github.com/smart-on-fhir/SoF-Demo)
+
+
+
