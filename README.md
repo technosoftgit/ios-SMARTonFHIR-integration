@@ -82,7 +82,7 @@ if self.isCustomUrlExist{
 ```
 
 ### Credits
-  The code based on below libraries
+  This code is based on below libraries:
 
   - smart-on-fhir/Swift-SMART 
     * Swift-SMART
