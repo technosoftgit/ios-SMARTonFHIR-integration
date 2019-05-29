@@ -8,18 +8,8 @@
 
 import UIKit
 
-var maxPatientsCapturedImages = 5
-var maxPatientsSelectedImages = 2
-
-//var FontNameDemi = "FoundrySterling-demi"
-//var FontNameMedium = "FoundrySterling-medium"
-//var FontNameThin = "FoundrySterling-thin"
-
 var kOthervalue = "Other"
 var kAllvalue = "All"
-
-let NUMBER_OF_ROWS=3
-
 
 // MARK: - Alert Messages..........
 let kMaxLimitReachedMsg = "You have reached maximum limit \(maxPatientsCapturedImages)  of photos."
@@ -66,8 +56,6 @@ let kUsername="username"
 
 let UndefinedSteps = -999
 
-let ENTITY_NAME = "SourceDB"
-
 let SYNC_START = "syncStart"
 let SYNC_END = "syncEnd"
 let NOTIF_SYNC_TIME = "syncTimeForNotification"
@@ -82,18 +70,6 @@ let MONTH_COUNT=4
 let DAYS_IN_WEEK = 7
 let DAYS_IN_MONTH = 30
 
-let INVALID_SOURCE=""
-
-
-#if DEBUG
-let BASE_URL = "http://10.10.10.162:8084/"   //  "http://10.10.10.162:8084/"  //  "http://localhost:8084/"
-#else
-let BASE_URL = "http://10.10.10.162:8084/"   //  "http://10.10.10.162:8084/"  //  "http://localhost:8084/"
-#endif
-
-
 let SESSION_EXPIRE_MSG = "Session expired, please re-login"
 let NO_CONNECTION_MSG = "No internet connection or server not responding"
 
-/** If only Health-Kit is available source. No Shimmer integration */
-let ONLY_HEALTH_KIT_AVAILABLE = true
