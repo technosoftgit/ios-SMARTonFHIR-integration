@@ -1,0 +1,3 @@
+[submodule "Swift-SMART"]
+	path = Swift-SMART
+	url = https://github.com/technosoftgit/Smart_2_8_2_Swift4.git

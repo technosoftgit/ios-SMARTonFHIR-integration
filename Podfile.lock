@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.8.0)
+  - Fabric (1.9.0)
+  - iOSDropDown (0.2.7)
+  - MKProgress (1.0.9)
+
+DEPENDENCIES:
+  - Alamofire
+  - Fabric
+  - iOSDropDown
+  - MKProgress (~> 1.0.8)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Fabric
+    - iOSDropDown
+    - MKProgress
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
+  iOSDropDown: 7a4cfc67d5166f319858747b63cd2f7760c4fb4b
+  MKProgress: 4fa8dd701b872c82b780c885d577f99c8848d584
+
+PODFILE CHECKSUM: f71066b60de47cdffa830ec88899a2635147c46f
+
+COCOAPODS: 1.5.3
