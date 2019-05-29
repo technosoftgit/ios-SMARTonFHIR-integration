@@ -28,7 +28,7 @@ There are some places where custom code performs interesting tasks:
 Add `EndpointProvider` instance that defines which FHIR endpoints (servers) will be available in the app.
 Right now these are hardcoded.
 
-### Endpoints.swift
+#### Endpoints.swift
 ```
 import Foundation
 import SMART
@@ -65,7 +65,7 @@ Add custom endpoint source and append in endpoints array. make sure following pa
 
 Add FHIR server application callback in Info.plist custom URI scheme without ://callback
 
-### ProviderListViewController
+#### ProviderListViewController.swift
 
 rename "smartapp://callback" if required
 ```
