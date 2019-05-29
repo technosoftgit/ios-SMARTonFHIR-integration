@@ -1,6 +1,5 @@
 //
 //  EndpointProvider.swift
-//  SoF-MedList
 //
 //  Created by Pascal Pfiffner on 12/3/16.
 //  Copyright © 2016 SMART Platforms. All rights reserved.

@@ -1,6 +1,5 @@
 //
 //  Endpoints.swift
-//  SoF-MedList
 //
 //  Created by Pascal Pfiffner on 12/5/16.
 //  Copyright © 2016 SMART Platforms. All rights reserved.
@@ -16,10 +15,10 @@ func getConfiguredEndpoints() -> [Endpoint] {
     let smartSource = Client(
         baseURL: "https://r2.smarthealthit.org/",
         settings: [
-            "client_id": "my_mobile_app",
-            "client_name": "SMART on FHIR iOS Sample App",
-            "redirect": "smartapp://callback",
-            "logo_uri": "https://avatars1.githubusercontent.com/u/7401080",
+            "client_id": "Registered app ID",
+            "client_name": "Registered app name or any other",
+            "redirect": "Registered app callback, like smartapp://callback",
+            "logo_uri": "Logo_url",
             ])
     smartSource.authProperties.granularity = .patientSelectNative
     smartSource.authProperties.embedded = true

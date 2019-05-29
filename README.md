@@ -26,20 +26,60 @@ There are some places where custom code performs interesting tasks:
 ### End Points
 
 Add `EndpointProvider` instance that defines which FHIR endpoints (servers) will be available in the app.
-Right now these are hardcoded, starting at line 16 to line 25 in `Endpoints.swift`.
+Right now these are hardcoded.
+
+### Endpoints.swift
+```
+import Foundation
+import SMART
+
+
+func getConfiguredEndpoints() -> [Endpoint] {
+    var endpoints = [Endpoint]()
+    
+    let smartSource = Client(
+        baseURL: "https://r2.smarthealthit.org/",
+        settings: [
+            "client_id": "Registered app ID",
+            "client_name": "Registered app name or any other",
+            "redirect": "Registered app callback, like smartapp://callback",
+            "logo_uri": "Logo_URL",
+            ])
+    smartSource.authProperties.granularity = .patientSelectNative
+    smartSource.authProperties.embedded = true
+    
+    endpoints.append(Endpoint(client: smartSource, name: "SMART (Sandbox)"))
+    
+    //----------------------------
+    
+    return endpoints
+}
+```
 
 Add custom endpoint source and append in endpoints array. make sure following parameters are identical provided in SMART FHIR application
-	1. client_id(required)
-	2. redirect or callback(required)
-	3. scope(required)
+1. client_id(required)
+2. redirect or callback(required)
+3. scope(required)
 
 ### Info Plist
 
-Add FHIR server application callback callback url in Info.plist without ://callback
+Add FHIR server application callback in Info.plist custom URI scheme without ://callback
 
 ### ProviderListViewController
 
-rename "smartapp://callback" on line 160 and 170 with our FHIR server callback if required
+rename "smartapp://callback" if required
+```
+if self.isCustomUrlExist{
+               	...
+                self.callbackTextField.text = "smartapp://callback"
+                self.sendButton.isHidden = false
+                
+            }else{
+                ...
+                self.callbackTextField.text = "smartapp://callback"
+                self.sendButton.isHidden = true
+            }
+```
 
 ### Credits
   The code based on below liraries
