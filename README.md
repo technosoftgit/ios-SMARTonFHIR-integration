@@ -84,7 +84,7 @@ if self.isCustomUrlExist{
 ### Credits
   The code based on below liraries
 
-  - smart-on-fhir / Swift-SMART 
+  - smart-on-fhir/Swift-SMART 
     * Swift-SMART
     * [https://github.com/smart-on-fhir/Swift-SMART](https://github.com/smart-on-fhir/Swift-SMART)
 
@@ -96,5 +96,8 @@ if self.isCustomUrlExist{
   	* SoF-Demo
   	* [https://github.com/smart-on-fhir/SoF-Demo](https://github.com/smart-on-fhir/SoF-Demo)
 
+  - p2/OAuth2
+  	* OAuth2
+  	* [https://github.com/p2/OAuth2](https://github.com/p2/OAuth2)
 
 
